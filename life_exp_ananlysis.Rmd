@@ -23,7 +23,14 @@ gapminder_unfiltered
 
 Calculate maximum
 ```{r}
-
+library(dplyr)
+gapminder_unfiltered %>% 
+  group_by(year) %>% 
+  filter(lifeExp == max(lifeExp)) %>%
+  arrange(year) %>%
+    ungroup() ->
+    maxdf
+maxdf
 ```
 
 
