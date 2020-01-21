@@ -21,5 +21,11 @@ data("gapminder_unfiltered")
 gapminder_unfiltered
 ```
 
+Calculate maximum
+```{r}
+
+```
+
+
 # Plot
 
